@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background9">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/label" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="269dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/imprima"
+        android:text="Select Grade Level"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/image_three"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/bg1"
+        app:layout_constraintBottom_toTopOf="@+id/image_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/g3" />
+
+    <ImageView
+        android:id="@+id/image_two"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="106dp"
+        android:background="@drawable/bg2"
+        app:layout_constraintBottom_toTopOf="@+id/image_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_three"
+        app:srcCompat="@drawable/g2" />
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="106dp"
+        android:background="@drawable/bg3"
+        app:layout_constraintBottom_toTopOf="@+id/image_kinder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_two"
+        app:srcCompat="@drawable/g1" />
+
+    <ImageView
+        android:id="@+id/image_kinder"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_one"
+        app:srcCompat="@drawable/kinder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

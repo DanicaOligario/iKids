@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_nav"
+    app:startDestination="@id/nav_dashboard">
+
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.ikids.nav.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard"/>
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.ikids.nav.UserFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_user"/>
+    <fragment
+        android:id="@+id/nav_level"
+        android:name="com.example.ikids.nav.LevelFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_level">
+        <action
+            android:id="@+id/action_nav_level_to_createLessonFragment"
+            app:destination="@id/createLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.ikids.nav.SettingsFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/createLessonFragment"
+        android:name="com.example.ikids.views.CreateLessonFragment"
+        android:label="fragment_create_lesson"
+        tools:layout="@layout/fragment_create_lesson" />
+
+</navigation>

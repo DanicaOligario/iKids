@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/alata"
+        android:text="I am a..."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewStudent"
+        android:layout_width="260dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/learner" />
+
+    <ImageView
+        android:id="@+id/imageViewTeacher"
+        android:layout_width="260dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewStudent"
+        app:srcCompat="@drawable/teacher" />
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTeacher"
+        app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="@drawable/next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

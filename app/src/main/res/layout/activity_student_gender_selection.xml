@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5">
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="150dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/custom_image_button_pink"
+        android:scaleType="fitCenter"
+        android:src="@drawable/girl"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGirl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boy"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/boy"
+        android:layout_width="150dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/custom_image_button_blue"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boy"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBoy"
+        app:layout_constraintEnd_toStartOf="@+id/girl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textViewBoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="109dp"
+        android:fontFamily="@font/didact_gothic"
+        android:text="boy"
+        android:textColor="#03A9F4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGirl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boy" />
+
+    <TextView
+        android:id="@+id/textViewGirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/didact_gothic"
+        android:text="girl"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewBoy"
+        app:layout_constraintTop_toBottomOf="@+id/girl" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="309dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/label" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/imprima"
+        android:text="I am a..."
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
